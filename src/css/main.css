@@ -33,3 +33,9 @@ form {
   flex-direction: column;
   margin: var(--margin-small) 0;
 }
+
+.label input {
+  height: var(--input-height-medium);
+  border: none;
+  box-shadow: var(--box-shadow);
+}
