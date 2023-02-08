@@ -10,5 +10,10 @@
   --input-height-small: 1rem;
   --input-height-medium: 2rem;
   --box-shadow: 0 0 20px 1px rgb(0 0 0 / 20%);
-  --container-width: 700px;
+  --padding-small: 1rem;
+  --padding-medium: 2rem;
+  --padding-big: 3rem;
+  --margin-small: 1rem;
+  --margin-medium: 2rem;
+  --margin-big: 3rem;
 }
