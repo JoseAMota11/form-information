@@ -22,7 +22,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: var(--padding-small);
+}
+
+.title {
+  margin-bottom: var(--margin-small);
 }
 
 .label {
