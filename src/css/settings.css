@@ -10,4 +10,5 @@
   --input-height-small: 1rem;
   --input-height-medium: 2rem;
   --box-shadow: 0 0 20px 1px rgb(0 0 0 / 20%);
+  --container-width: 700px;
 }
