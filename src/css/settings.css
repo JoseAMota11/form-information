@@ -1,9 +1,9 @@
 :root {
-  --font-size-small: .8rem;
+  --font-size-small: 0.8rem;
   --font-size-medium: 1rem;
   --font-size-big: 1.2rem;
   --font-size-bigger: 1.6rem;
-  --border-radios: .2rem;
+  --border-radios: 0.2rem;
   --input-width-small: 10rem;
   --input-width-medium: 12rem;
   --input-width-big: 14rem;
@@ -13,7 +13,7 @@
   --padding-small: 1rem;
   --padding-medium: 2rem;
   --padding-big: 3rem;
-  --margin-small: 1rem;
-  --margin-medium: 2rem;
-  --margin-big: 3rem;
+  --margin-small: 0.4rem;
+  --margin-medium: 1rem;
+  --margin-big: 2rem;
 }
