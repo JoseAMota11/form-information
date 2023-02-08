@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Form</title>
-  </head>
-  <body>
-    <main>
-      <h1 class="title">Fill all the form information</h1>
-      <form>
-        <label class="label label--name">
-          Name
-          <input type="text" />
-        </label>
-        <label class="label label--lastname">
-          Last Name
-          <input type="text" />
-        </label>
-        <label class="label label--email">
-          Email
-          <input type="email" />
-        </label>
-        <label class="label label--password">
-          Password
-          <input type="password" />
-        </label>
-        <label class="label label--password__conf">
-          Confirm Password
-          <input type="password" />
-        </label>
-        <label class="label label--phone">
-          Phone
-          <input type="tel" />
-        </label>
-        <label class="label label--age">
-          Age
-          <input type="number" />
-        </label>
-        <label class="label label--web">
-          Website
-          <input type="url" />
-        </label>
-        <label class="label label--expe">
-          Level Of Experience
-          <input type="range" />
-        </label>
-        <section class="checkbox__container">
-          <label class="label label--gender">Genders</label>
-          <article>
-            <span>Male</span>
-            <input type="checkbox" id="male" name="male" checked />
-            <span>Female</span>
-            <input type="checkbox" id="female" name="female" />
-          </article>
-        </section>
-      </form>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Form</title>
+</head>
+<body>
+  <main>
+    <h1 class="title">Fill all the form information</h1>
+    <form>
+      <article class="container">
+        <label class="container__label label--name">Name</label>
+        <input type="text" />
+      </article>
+      <article class="container">
+        <label class="container__label label--last__name">Last Name</label>
+        <input type="text" />
+      </article>
+      <article class="container">
+        <label class="container__label label--email">Email</label>
+        <input type="email" />
+      </article>
+      <article class="container">
+        <label class="container__label label--password">Password</label>
+        <input type="password" />
+      </article>
+      <article class="container">
+        <label class="container__label label--password__confir">Password Confirmation</label>
+        <input type="password" />
+      </article>
+      <article class="container">
+        <label class="container__label label--age">Age</label>
+        <input type="number" />
+      </article>
+      <article class="container">
+        <label class="container__label label--web">Website</label>
+        <input type="url" />
+      </article>
+      <article class="container">
+        <label class="container__label label--phone">Phone</label>
+        <input type="tel" />
+      </article>
+      <article class="container">
+        <label class="container__label label--expe">Level of experience</label>
+        <input type="range" />
+      </article>
+      <section class="checkbox__container">
+        <label class="container__label label--gender">Genders</label>
+        <article>
+          <span>Male</span>
+          <input type="checkbox" id="male" name="male" checked />
+          <span>Female</span>
+          <input type="checkbox" id="female" name="female" />
+        </article>
+      </section>
+    </form>
+  </main>
+</body>
 </html>
