@@ -14,6 +14,7 @@
   --input-width-big: 14rem;
   --input-height-small: 1rem;
   --input-height-medium: 2rem;
+  --input-height-big: 2.6rem;
   --box-shadow: 0 0 20px 1px rgb(0 0 0 / 20%);
   --padding-small: 1rem;
   --padding-medium: 2rem;
@@ -24,5 +25,7 @@
   --font-weight: bold;
   --font: 'Allerta', sans-serif;
   --indent: 0.2rem;
-  --container-width: 400px;
+  --container-width-normal: 500px;
+  --container-width-movil: 400px;
+  --container-width-small: 300px;
 }

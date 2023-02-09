@@ -8,7 +8,6 @@
 }
 
 body {
-  height: 100%;
   background-color: var(--secondary-color);
 }
 
@@ -23,7 +22,7 @@ main {
 }
 
 form {
-  min-width: var(--container-width);
+  width: var(--container-width-normal);
   background-color: var(--tertiary-color);
   border-radius: var(--border-radios-medium);
   padding: 1rem;
@@ -49,20 +48,4 @@ form {
 
 section {
   margin: var(--margin-small) 0;
-}
-
-@media only screen and (max-width: 412px) {
-  main {
-    place-content: unset;
-  }
-
-  .title {
-    font-size: var(--font-size-big);
-  }
-
- form {
-  display: grid;
-  place-content: center;
-  padding: 0;
- }
 }
