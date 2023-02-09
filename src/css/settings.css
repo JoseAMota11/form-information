@@ -1,9 +1,14 @@
 :root {
+  --primary-color: #d5bdaf;
+  --secondary-color: #d6ccc2;
+  --tertiary-color: #f5ebe0;
   --font-size-small: 0.8rem;
   --font-size-medium: 1rem;
   --font-size-big: 1.2rem;
   --font-size-bigger: 1.6rem;
-  --border-radios: 0.2rem;
+  --border-radios-small: 0.2rem;
+  --border-radios-medium: 0.6rem;
+  --border-radios-big: 1rem;
   --input-width-small: 10rem;
   --input-width-medium: 12rem;
   --input-width-big: 14rem;
@@ -16,4 +21,8 @@
   --margin-small: 0.4rem;
   --margin-medium: 1rem;
   --margin-big: 2rem;
+  --font-weight: bold;
+  --font: 'Allerta', sans-serif;
+  --indent: 0.2rem;
+  --container-width: 400px;
 }

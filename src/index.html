@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="https://fonts.googleapis.com/css?family=Allerta:regular" rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.css" />
   <title>Form</title>
 </head>
 <body>
   <main>
-    <h1 class="title">Fill all the form information</h1>
     <form>
+      <h1 class="title">Form information</h1>
       <article class="container">
         <label class="container__label label--name">Name</label>
         <input type="text" />
@@ -47,9 +48,9 @@
         <label class="container__label label--expe">Level of experience</label>
         <input type="range" />
       </article>
-      <section class="checkbox__container">
+      <section>
         <label class="container__label label--gender">Genders</label>
-        <article>
+        <article class="container__checkbox">
           <span>Male</span>
           <input type="checkbox" id="male" name="male" checked />
           <span>Female</span>
