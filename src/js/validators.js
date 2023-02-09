@@ -1,14 +1,15 @@
 // Validate name a last name.
-const stringValidator = /([A-Za-z\s])\w+/g;
+export const stringValidator = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
+
 
 // Validate email.
-const emailValidator = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+export const emailValidator = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 // Validate numbers
-const numberValidator = /\d+]/;
+export const numberValidator = /\d+/;
 
 // Validate URL.
-const urlValidator = /^(http(s):\/\/.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
+export const urlValidator = /^(http(s):\/\/.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
 
 // Validate tel.
-const telValidator = /^[0-9]{4}[\-][0-9]{4}$/
+export const telValidator = /^[0-9]{4}[\-][0-9]{4}$/
