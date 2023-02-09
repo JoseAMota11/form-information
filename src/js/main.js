@@ -1,5 +1,7 @@
+import { createErrorAlert } from './errorsAlerts.js';
 import {
-  stringValidatorFunc,
+  nameValidatorFunc,
+  lastNameValidatorFunc,
   emailValidatorFunc,
   numberValidatorFunc,
   passwordValidatorFunc,
@@ -11,14 +13,14 @@ const nameInput = document.getElementById('name_input');
 const lastNameInput = document.getElementById('last_name_input');
 const emailInput = document.getElementById('email_input');
 const passwordInput = document.getElementById('password_input');
-const passwordConfirmationInput = document.getElementById('password_confirmation_input');
+const passwordConfirmationInput = document.getElementById(
+  'password_confirmation_input'
+);
 const ageInput = document.getElementById('age_input');
 const urlInput = document.getElementById('url_input');
 const phoneInput = document.getElementById('phone_input');
 // const levelOfExperienceInput = document.getElementById('experience_input');
 const form = document.getElementById('formSummit');
-
-
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -32,12 +34,11 @@ form.addEventListener('submit', (e) => {
   let url = urlInput.value;
   let phone = phoneInput.value;
 
-  stringValidatorFunc(name);
-  stringValidatorFunc(lastName);
-  emailValidatorFunc(email);
-  passwordValidatorFunc(password, passConfirmation);
-  numberValidatorFunc(age);
-  urlValidatorFunc(url);
-  telValidatorFunc(phone);
-  
+  createErrorAlert(nameValidatorFunc(name));
+  createErrorAlert(lastNameValidatorFunc(lastName));
+  createErrorAlert(emailValidatorFunc(email));
+  createErrorAlert(numberValidatorFunc(age));
+  createErrorAlert(urlValidatorFunc(url));
+  createErrorAlert(telValidatorFunc(phone));
+  createErrorAlert(passwordValidatorFunc(password, passConfirmation));
 });

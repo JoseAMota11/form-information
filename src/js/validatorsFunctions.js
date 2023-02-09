@@ -1,13 +1,56 @@
-import { emailValidator, numberValidator, stringValidator, telValidator, urlValidator } from './validators.js';
+import {
+  emailValidator,
+  numberValidator,
+  stringValidator,
+  telValidator,
+  urlValidator,
+} from './validators.js';
 
-export const stringValidatorFunc = (test) => stringValidator.test(test);
+export const nameValidatorFunc = (test) => {
+  return {
+    result: stringValidator.test(test),
+    name: 'name',
+  };
+};
 
-export const emailValidatorFunc = (test) => emailValidator.test(test);
+export const lastNameValidatorFunc = (test) => {
+  return {
+    result: stringValidator.test(test),
+    name: 'last name',
+  };
+};
 
-export const numberValidatorFunc = (test) => numberValidator.test(test);
+export const emailValidatorFunc = (test) => {
+  return {
+    result: emailValidator.test(test),
+    name: 'email',
+  };
+};
 
-export const urlValidatorFunc = (test) => urlValidator.test(test);
+export const numberValidatorFunc = (test) => {
+  return {
+    result: numberValidator.test(test),
+    name: 'age',
+  };
+};
 
-export const telValidatorFunc = (test) => telValidator.test(test);
+export const urlValidatorFunc = (test) => {
+  return {
+    result: urlValidator.test(test),
+    name: 'website',
+  };
+};
 
-export const passwordValidatorFunc = (pass, passConfirmation) => pass === passConfirmation;
+export const telValidatorFunc = (test) => {
+  return {
+    result: telValidator.test(test),
+    name: 'phone',
+  };
+};
+
+export const passwordValidatorFunc = (pass, passConfirmation) => {
+  return {
+    result: pass === passConfirmation,
+    name: 'password'
+  }
+}
