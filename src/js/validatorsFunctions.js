@@ -16,7 +16,7 @@ export const nameValidatorFunc = (test) => {
 export const lastNameValidatorFunc = (test) => {
   return {
     result: stringValidator.test(test),
-    name: 'last name',
+    name: 'last',
   };
 };
 

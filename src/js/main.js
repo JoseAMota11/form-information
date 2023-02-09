@@ -37,8 +37,8 @@ form.addEventListener('submit', (e) => {
   createErrorAlert(nameValidatorFunc(name));
   createErrorAlert(lastNameValidatorFunc(lastName));
   createErrorAlert(emailValidatorFunc(email));
+  createErrorAlert(passwordValidatorFunc(password, passConfirmation));
   createErrorAlert(numberValidatorFunc(age));
   createErrorAlert(urlValidatorFunc(url));
   createErrorAlert(telValidatorFunc(phone));
-  createErrorAlert(passwordValidatorFunc(password, passConfirmation));
 });
