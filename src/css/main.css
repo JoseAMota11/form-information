@@ -34,6 +34,7 @@ form {
 @media only screen and (max-width: 560px) {
   main {
     align-items: unset;
+    font-size: (--font-size-small);
   }
 
   .title {
@@ -49,7 +50,7 @@ form {
     form {
       display: flex;
       flex-direction: column;
-      gap: var(--gap-medium)
+      gap: var(--gap-medium);
     }
   }
 }
@@ -58,15 +59,16 @@ form {
   border: none;
   height: var(--btn-height-medium);
   border-radius: var(--border-radios-small);
+  width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  margin: var(--margin-small) 0;
+  margin: 0 0 var(--margin-small) 0;
 }
 
-.container > input:not(input[type="range"]) {
+.container > input:not(input[type='range']) {
   border: none;
   background-color: var(--secondary-color);
   height: var(--input-height-medium);
@@ -74,24 +76,44 @@ form {
   text-indent: var(--indent);
 }
 
-.container:has(input[type=range]) {
-    
-}
-
 .container__label {
   margin: var(--margin-small) 0;
+}
+
+.container__checkbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container__checkbox div:has(input#react) {
+  justify-self: end;
+}
+
+.container__checkbox div:has(input#javascript) {
+  justify-self: center;
 }
 
 section {
   margin: var(--margin-small) 0;
 }
 
-@media only screen and (max-width: 560px) {
-  .container {
-    
+@media only screen and (max-width: 800px) {
+  .container__checkbox {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 
-  .container > input:not(input[type="range"]) {
+  .container__checkbox div:has(input#react) {
+    justify-self: unset;
+  }
+  
+  .container__checkbox div:has(input#javascript) {
+    justify-self: unset;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .container > input:not(input[type='range']) {
     height: var(--input-height-medium);
   }
 

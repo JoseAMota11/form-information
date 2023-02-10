@@ -14,9 +14,7 @@ const nameInput = document.getElementById('name_input');
 const lastNameInput = document.getElementById('last_name_input');
 const emailInput = document.getElementById('email_input');
 const passwordInput = document.getElementById('password_input');
-const passwordConfirmationInput = document.getElementById(
-  'password_confirmation_input'
-);
+const passwordConfirmationInput = document.getElementById('password_confirmation_input');
 const ageInput = document.getElementById('age_input');
 const urlInput = document.getElementById('url_input');
 const phoneInput = document.getElementById('phone_input');
@@ -47,5 +45,5 @@ export const formEventListener = (e) => {
   createErrorAlert(numberValidatorFunc(age));
   createErrorAlert(urlValidatorFunc(url));
   createErrorAlert(telValidatorFunc(phone));
-  createErrorAlert(experienceValidatorFunc(experience))
+  createErrorAlert(experienceValidatorFunc(experience));
 };
