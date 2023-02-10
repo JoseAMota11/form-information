@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #d5bdaf;
-  --secondary-color: #d6ccc2;
-  --tertiary-color: #f5ebe0;
+  --primary-color: #30343f;
+  --secondary-color: #e7ecef;
+  --tertiary-color: #274690;
+  --text-color: #e7ecef;
   --font-size-small: 0.8rem;
   --font-size-medium: 1rem;
   --font-size-big: 1.2rem;
@@ -28,4 +29,9 @@
   --container-width-normal: 500px;
   --container-width-movil: 400px;
   --container-width-small: 300px;
+  --gap-small: 0.2rem;
+  --gap-medium: 0.4rem;
+  --gap-big: 0.6rem;
+  --btn-height-small: 2rem;
+  --btn-height-medium: 2.6rem;
 }

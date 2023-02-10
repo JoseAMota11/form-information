@@ -1,7 +1,6 @@
 // Validate name a last name.
 export const stringValidator = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
 
-
 // Validate email.
 export const emailValidator = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
