@@ -14,7 +14,9 @@ body {
 main {
   height: 100vh;
   display: grid;
-  place-content: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
 }
 
 .title {
@@ -22,10 +24,21 @@ main {
 }
 
 form {
-  width: var(--container-width-normal);
+  grid-column: 3 / 6;
   background-color: var(--tertiary-color);
   border-radius: var(--border-radios-medium);
   padding: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    align-items: unset;
+  }
+
+  form {
+    grid-column: 1 / -1;
+    border-radius: none;
+  }
 }
 
 .container {
