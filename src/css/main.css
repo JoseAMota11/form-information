@@ -69,9 +69,13 @@ form {
 .container > input:not(input[type="range"]) {
   border: none;
   background-color: var(--secondary-color);
-  height: var(--input-height-big);
+  height: var(--input-height-medium);
   border-radius: var(--border-radios-small);
   text-indent: var(--indent);
+}
+
+.container:has(input[type=range]) {
+    
 }
 
 .container__label {

@@ -46,16 +46,17 @@
         <input type="tel" id="phone_input"/>
       </article>
       <article class="container">
-        <label class="container__label label--expe">Level of experience</label>
+        <label class="container__label label--expe" id="expe">Level of experience</label>
         <input type="range" id="experience_input"/>
+        <span class="experience" id="experience">Experience: 0</span>
       </article>
       <section>
         <label class="container__label label--gender">Genders</label>
         <article class="container__checkbox">
           <span>Male</span>
-          <input type="checkbox" id="male" name="male" checked />
+          <input type="checkbox" id="male" value="male" />
           <span>Female</span>
-          <input type="checkbox" id="female" name="female" />
+          <input type="checkbox" id="female" value="female" />
         </article>
       </section>
       <button type="submit" class="btn">Send</button>
