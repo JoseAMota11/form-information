@@ -1,4 +1,4 @@
-import { createErrorAlert } from './errorsAlerts.js';
+import { createErrorAlert } from './err/errorsAlerts.js';
 import {
   nameValidatorFunc,
   lastNameValidatorFunc,
@@ -8,7 +8,7 @@ import {
   telValidatorFunc,
   urlValidatorFunc,
   experienceValidatorFunc,
-} from './validatorsFunctions.js';
+} from './validate/validatorsFunctions.js';
 
 const nameInput = document.getElementById('name_input');
 const lastNameInput = document.getElementById('last_name_input');
