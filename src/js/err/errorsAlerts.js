@@ -11,7 +11,7 @@ export const createErrorAlert = ({ result, name, value }) => {
       thisLabel.textContent += ERROR_MESSAGE;
     }
     thisLabel.style.color = COLOR_RED;
-    thisLabel.nextElementSibling.style.outline = `${COLOR_RED} 1px solid`;
+    thisLabel.nextElementSibling.nextElementSibling.style.outline = `${COLOR_RED} 1px solid`;
   } else {
     thisLabel.textContent = thisLabel.textContent.replace(ERROR_MESSAGE, '');
     thisLabel.style.color = COLOR_BLACK;

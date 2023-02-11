@@ -8,129 +8,141 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  height: 100vh;
   color: var(--text-color);
+  background-image: url('https://images.pexels.com/photos/7641842/pexels-photo-7641842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 main {
-  height: 100vh;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 1fr;
-  align-items: center;
+  place-content: center;
 }
 
 .title {
-  margin: var(--margin-small) 0;
-}
-
-form {
-  grid-column: 3 / 6;
-  background-color: var(--tertiary-color);
-  border-radius: var(--border-radios-medium);
-  padding: 1rem;
-}
-
-@media only screen and (max-width: 560px) {
-  main {
-    align-items: unset;
-    font-size: (--font-size-small);
-  }
-
-  .title {
-    font-size: var(--font-size-bigger);
-  }
-
-  form {
-    grid-column: 1 / -1;
-    border-radius: unset;
-  }
-
-  @media only screen and (max-width: 414px) {
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: var(--gap-medium);
-    }
-  }
-}
-
-.btn {
-  border: none;
-  height: var(--btn-height-medium);
-  border-radius: var(--border-radios-small);
-  width: 100%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 var(--margin-small) 0;
-}
-
-.container > input:not(input[type='range']) {
-  border: none;
-  background-color: var(--secondary-color);
-  height: var(--input-height-medium);
-  border-radius: var(--border-radios-small);
-  text-indent: var(--indent);
-}
-
-.container__label {
-  margin: var(--margin-small) 0;
-}
-
-.container__checkbox {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.container__checkbox div:has(input#react) {
-  justify-self: end;
-}
-
-.container__checkbox div:has(input#javascript) {
-  justify-self: center;
-}
-
-section {
-  margin: var(--margin-small) 0;
-}
-
-@media only screen and (max-width: 800px) {
-  .container__checkbox {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .container__checkbox div:has(input#react) {
-    justify-self: unset;
-  }
-  
-  .container__checkbox div:has(input#javascript) {
-    justify-self: unset;
-  }
-}
-
-@media only screen and (max-width: 560px) {
-  .container > input:not(input[type='range']) {
-    height: var(--input-height-medium);
-  }
-
-  .container__label {
-    font-size: var(--font-size-small);
-  }
-
-  .container__checkbox {
-    font-size: var(--font-size-small);
-  }
-}
-
-.konami__container {
-  grid-column: 3 / 6;
   display: none;
 }
 
-.gif {
-  width: 100%;
+form {
+  width: 50rem;
+  background-color: var(--secondary-color);
+  backdrop-filter: blur(1rem);
+  padding: var(--padding-medium) 1.4rem;
+  display: grid;
+  gap: 1rem 0;
+}
+
+.container:not(:has(input[type='range'])) {
+  display: grid;
+  grid-template-columns: 35% 5% 60%;
+  grid-template-rows: 1fr;
+}
+
+.container span {
+  align-self: center;
+}
+
+.container input:not(input[type='range']) {
+  height: var(--input-height-medium);
+  border: none;
+  background-color: var(--input-background-color);
+  text-indent: var(--text-indent);
+  color: white;
+}
+
+.container:has(.label--expe) {
+  display: grid;
+  grid-template-columns: 35% 5% 30% 30%;
+  align-items: center;
+}
+
+.container:has(.label--expe) input + span {
+  justify-self: end;
+}
+
+.container:has(.label--expe) > input {
+  border: none;
+  height: var(--standard-height);
+}
+
+.container__label {
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.konami__container {
+  display: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 35% 5% 60%;
+}
+
+section label,
+span,
+.container__checkbox {
+  align-self: center;
+}
+
+.container__checkbox {
+  height: var(--standard-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: var(--btn-height-medium);
+}
+
+@media only screen and (max-width: 800px) {
+  form {
+    width: 35rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background: unset;
+    }
+    
+    main {
+      height: unset;
+      justify-content: unset;
+      align-items: unset;
+    }
+
+    form {
+      width: 100%;
+      background-color: var(--secondary-color);
+      padding: 1rem;
+    }
+
+    .container:not(:has(input[type='range'])) {
+      grid-template-columns: none;
+    }
+
+    .container span {
+      display: none;
+    }
+
+    .container__label {
+      margin-bottom: 0.4rem;
+    }
+
+    .container:has(.label--expe) {
+      grid-template-columns: none;
+    }
+
+    section {
+      grid-template-columns: none;
+    }
+    
+    section > span {
+      display: none;
+    }
+  }
 }

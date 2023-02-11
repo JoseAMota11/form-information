@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Allerta:regular" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Allerta:regular" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css" />
   <script src="./js/main.js" type="module" defer></script>
   <title>Form</title>
 </head>
+
 <body>
   <main>
+    <h1 class="title">Form information</h1>
     <form id="formSummit">
-      <h1 class="title">Form information</h1>
       <article class="container">
         <label class="container__label label--name" id="name">Name</label>
-        <input type="text" id="name_input" />
+        <span>:</span>
+        <input type="text" id="name_input" placeholder="Your Name" />
       </article>
       <article class="container">
         <label class="container__label label--last__name" id="last">Last Name</label>
-        <input type="text" id="last_name_input" />
+        <span>:</span>
+        <input type="text" id="last_name_input" placeholder="Your Last Name" />
       </article>
       <article class="container">
         <label class="container__label label--email" id="email">Email</label>
-        <input type="email" id="email_input" />
+        <span>:</span>
+        <input type="email" id="email_input" placeholder="Enter Your Email" />
       </article>
       <article class="container">
         <label class="container__label label--password" id="password">Password</label>
-        <input type="password" id="password_input" />
+        <span>:</span>
+        <input type="password" id="password_input" placeholder="Enter Your Password" />
       </article>
       <article class="container">
         <label class="container__label label--password__confir" id="password">Password Confirmation</label>
-        <input type="password" id="password_confirmation_input" />
+        <span>:</span>
+        <input type="password" id="password_confirmation_input" placeholder="Confirm Your Password " />
       </article>
       <article class="container">
         <label class="container__label label--age" id="age">Age</label>
-        <input type="number" id="age_input" />
+        <span>:</span>
+        <input type="number" id="age_input" placeholder="Your Age" />
       </article>
       <article class="container">
         <label class="container__label label--web" id="website">Website</label>
-        <input type="url" id="url_input" />
+        <span>:</span>
+        <input type="url" id="url_input" placeholder="Enter Your WebSite URL" />
       </article>
       <article class="container">
         <label class="container__label label--phone" id="phone">Phone</label>
-        <input type="tel" id="phone_input" />
+        <span>:</span>
+        <input type="tel" id="phone_input" placeholder="Phone Number" />
       </article>
       <article class="container">
         <label class="container__label label--expe" id="expe">Level of experience</label>
+        <span>:</span>
         <input type="range" id="experience_input" />
         <span class="experience" id="experience">Experience: 50</span>
       </article>
       <section>
-        <label class="container__label label--gender">Essential Knowledge</label>
+        <label class="container__label label--knowledge">Essential Knowledge</label>
+        <span>:</span>
         <article class="container__checkbox">
           <div>
             <span>Python</span>
@@ -70,9 +82,12 @@
       <button type="submit" class="btn">Send</button>
     </form>
     <div class="konami__container" id="konami">
-      <img src="https://media0.giphy.com/media/h3Jxu7a7pd72w/giphy.gif?cid=ecf05e4753yhta0x88ac618fhv8l9dmi1tj4nmeekd2t1uiu&rid=giphy.gif&ct=g" alt="Gif of Sasuke" class="gif">
+      <img
+        src="https://media0.giphy.com/media/h3Jxu7a7pd72w/giphy.gif?cid=ecf05e4753yhta0x88ac618fhv8l9dmi1tj4nmeekd2t1uiu&rid=giphy.gif&ct=g"
+        alt="Gif of Sasuke" class="gif">
       <button class="btn" id="konami_btn">GET BACK</button>
     </div>
   </main>
 </body>
+
 </html>

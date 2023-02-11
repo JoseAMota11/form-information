@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #30343f;
-  --secondary-color: #E0E1DD;
+  --primary-color: #fff;
+  --secondary-color: #000000aa;
   --tertiary-color: #274690;
   --text-color: #e7ecef;
   --font-size-small: 0.8rem;
@@ -10,11 +10,13 @@
   --border-radios-small: 0.2rem;
   --border-radios-medium: 0.6rem;
   --border-radios-big: 1rem;
+  --input-background-color: #000000aa;
   --input-width-small: 10rem;
   --input-width-medium: 12rem;
   --input-width-big: 14rem;
+  --input-width-bigger: 24rem;
   --input-height-small: 1rem;
-  --input-height-medium: 2rem;
+  --input-height-medium: 2.4rem;
   --input-height-big: 2.6rem;
   --box-shadow: 0 0 20px 1px rgb(0 0 0 / 20%);
   --padding-small: 1rem;
@@ -33,5 +35,7 @@
   --gap-medium: 0.4rem;
   --gap-big: 0.6rem;
   --btn-height-small: 2rem;
-  --btn-height-medium: 2.6rem;
+  --btn-height-medium: 2.4rem;
+  --text-indent: .6rem;
+  --standard-height: 2.4rem;
 }
