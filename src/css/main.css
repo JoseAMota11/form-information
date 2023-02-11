@@ -125,3 +125,12 @@ section {
     font-size: var(--font-size-small);
   }
 }
+
+.konami__container {
+  grid-column: 3 / 6;
+  display: none;
+}
+
+.gif {
+  width: 100%;
+}
