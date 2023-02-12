@@ -111,7 +111,6 @@ span,
   }
 
   @media only screen and (max-width: 600px) {
-
     .title {
       display: block;
     }
@@ -119,7 +118,7 @@ span,
     body {
       background: unset;
     }
-    
+
     main {
       height: unset;
       justify-content: unset;
@@ -151,9 +150,13 @@ span,
     section {
       grid-template-columns: none;
     }
-    
+
     section > span {
       display: none;
+    }
+
+    .konami__container img {
+      width: 100%;
     }
   }
 }

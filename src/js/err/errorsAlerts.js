@@ -1,6 +1,6 @@
 const labels = document.getElementsByClassName('container__label');
 const COLOR_RED = '#FF4646';
-const COLOR_BLACK = '#e7ecef';
+const COLOR_BLACK = '#fff';
 const ERROR_MESSAGE = ' is incorrect';
 
 export const createErrorAlert = ({ result, name, value }) => {
@@ -15,7 +15,7 @@ export const createErrorAlert = ({ result, name, value }) => {
   } else {
     thisLabel.textContent = thisLabel.textContent.replace(ERROR_MESSAGE, '');
     thisLabel.style.color = COLOR_BLACK;
-    thisLabel.nextElementSibling.style.outline = 'none';
+    thisLabel.nextElementSibling.nextElementSibling.style.outline = 'none';
     console.log(`${name.toUpperCase()}: ${value}`);
   }
 };
