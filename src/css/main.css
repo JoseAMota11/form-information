@@ -97,6 +97,12 @@ span,
 
 .btn {
   height: var(--btn-height-medium);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bc-color);
 }
 
 @media only screen and (max-width: 800px) {
@@ -105,6 +111,11 @@ span,
   }
 
   @media only screen and (max-width: 600px) {
+
+    .title {
+      display: block;
+    }
+
     body {
       background: unset;
     }
@@ -118,7 +129,7 @@ span,
     form {
       width: 100%;
       background-color: var(--secondary-color);
-      padding: 1rem;
+      padding: 0.6rem;
     }
 
     .container:not(:has(input[type='range'])) {

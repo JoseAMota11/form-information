@@ -6,7 +6,7 @@ let SAVE_TYPED_KEYS = [];
 
 button.addEventListener('click', () => {
   konamiContainer.style.display = 'none';
-  formContainer.style.display = 'block';
+  formContainer.style.display = 'grid';
 });
 
 export const konami = (e) => {
@@ -14,7 +14,8 @@ export const konami = (e) => {
   SAVE_TYPED_KEYS.slice(-SECRETE_CODE.length - 1, SAVE_TYPED_KEYS.length - SECRETE_CODE.length);
 
   if (SAVE_TYPED_KEYS.join('').includes(SECRETE_CODE)) {
-    konamiContainer.style.display = 'block';
+    konamiContainer.style.display = 'flex';
+    konamiContainer.style.flexDirection = 'column';
     formContainer.style.display = 'none';
   }
 };

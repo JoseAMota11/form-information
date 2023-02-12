@@ -13,8 +13,8 @@
 
 <body>
   <main>
-    <h1 class="title">Form information</h1>
-    <form id="formSummit">
+    <form id="formSummit" novalidate>
+      <h1 class="title">Form information</h1>
       <article class="container">
         <label class="container__label label--name" id="name">Name</label>
         <span>:</span>
@@ -53,7 +53,7 @@
       <article class="container">
         <label class="container__label label--phone" id="phone">Phone</label>
         <span>:</span>
-        <input type="tel" id="phone_input" placeholder="Phone Number" />
+        <input type="tel" id="phone_input" placeholder="XXXX-XXXX" />
       </article>
       <article class="container">
         <label class="container__label label--expe" id="expe">Level of experience</label>
@@ -67,15 +67,15 @@
         <article class="container__checkbox">
           <div>
             <span>Python</span>
-            <input type="checkbox" id="python" value="python" />
+            <input type="checkbox" class="checked" id="python" value="python" />
           </div>
           <div>
             <span>JavaScript</span>
-            <input type="checkbox" id="javascript" value="javascript" />
+            <input type="checkbox" class="checked" id="javascript" value="javascript" />
           </div>
           <div>
             <span>React</span>
-            <input type="checkbox" id="react" value="react" />
+            <input type="checkbox" class="checked" id="react" value="react" />
           </div>
         </article>
       </section>

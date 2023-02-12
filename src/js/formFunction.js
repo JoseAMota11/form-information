@@ -1,4 +1,5 @@
 import { createErrorAlert } from './err/errorsAlerts.js';
+import { getCheckboxItems } from './helpers.js';
 import {
   nameValidatorFunc,
   lastNameValidatorFunc,
@@ -20,6 +21,7 @@ const urlInput = document.getElementById('url_input');
 const phoneInput = document.getElementById('phone_input');
 const levelOfExperienceInput = document.getElementById('experience_input');
 const experienceSpan = document.getElementById('experience');
+const checkboxElements = document.getElementsByClassName('checked');
 
 levelOfExperienceInput.addEventListener('change', (e) => {
   experienceSpan.textContent = `Experience: ${e.target.value}`;
@@ -37,7 +39,7 @@ export const formEventListener = (e) => {
   let url = urlInput.value;
   let phone = phoneInput.value;
   let experience = levelOfExperienceInput.value;
-
+  
   createErrorAlert(nameValidatorFunc(name));
   createErrorAlert(lastNameValidatorFunc(lastName));
   createErrorAlert(emailValidatorFunc(email));
@@ -46,4 +48,5 @@ export const formEventListener = (e) => {
   createErrorAlert(urlValidatorFunc(url));
   createErrorAlert(telValidatorFunc(phone));
   createErrorAlert(experienceValidatorFunc(experience));
+  getCheckboxItems(checkboxElements);
 };
