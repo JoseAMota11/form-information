@@ -99,6 +99,7 @@ span,
   height: var(--btn-height-medium);
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn:hover {

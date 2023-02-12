@@ -31,11 +31,13 @@ export const emailValidatorFunc = (test) => {
 };
 
 export const numberValidatorFunc = (test) => {
-  return {
-    value: test,
-    result: numberValidator.test(test),
-    name: 'age',
-  };
+  return test > 120
+    ? { value: test, result: false, name: 'age' }
+    : {
+        value: test,
+        result: numberValidator.test(test),
+        name: 'age',
+      };
 };
 
 export const urlValidatorFunc = (test) => {
@@ -58,14 +60,14 @@ export const passwordValidatorFunc = (pass, passConfirmation) => {
   return {
     value: pass,
     result: pass === passConfirmation,
-    name: 'password'
-  }
-}
+    name: 'password',
+  };
+};
 
 export const experienceValidatorFunc = (expe) => {
   return {
     value: expe,
     result: true,
-    name: 'expe'
-  }
-}
+    name: 'expe',
+  };
+};

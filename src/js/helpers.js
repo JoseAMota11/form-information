@@ -11,3 +11,9 @@ export const getCheckboxItems = (checkboxList) => {
     console.log(`Knowledge: ${printCheckedIdem.join(', ')}`.toUpperCase());    
   }
 }
+
+export const invalidChars = [
+  "-",
+  "+",
+  "e",
+];

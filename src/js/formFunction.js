@@ -1,5 +1,5 @@
 import { createErrorAlert } from './err/errorsAlerts.js';
-import { getCheckboxItems } from './helpers.js';
+import { getCheckboxItems, invalidChars } from './helpers.js';
 import {
   nameValidatorFunc,
   lastNameValidatorFunc,
@@ -27,6 +27,14 @@ levelOfExperienceInput.addEventListener('change', (e) => {
   experienceSpan.textContent = `Experience: ${e.target.value}`;
 });
 
+// Verify that the input number, cannot 
+// receive the letter "e", nor + and - sign.
+ageInput.addEventListener('keydown', (e) => {
+  if (invalidChars.includes(e.key)) {
+    e.preventDefault();
+  }
+});
+
 export const formEventListener = (e) => {
   e.preventDefault();
 
@@ -39,7 +47,7 @@ export const formEventListener = (e) => {
   let url = urlInput.value;
   let phone = phoneInput.value;
   let experience = levelOfExperienceInput.value;
-  
+
   createErrorAlert(nameValidatorFunc(name));
   createErrorAlert(lastNameValidatorFunc(lastName));
   createErrorAlert(emailValidatorFunc(email));
