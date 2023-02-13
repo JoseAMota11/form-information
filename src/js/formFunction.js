@@ -27,11 +27,17 @@ levelOfExperienceInput.addEventListener('change', (e) => {
   experienceSpan.textContent = `Experience: ${e.target.value}`;
 });
 
-// Verify that the input number, cannot 
+// Verify that the input number, cannot
 // receive the letter "e", nor + and - sign.
 ageInput.addEventListener('keydown', (e) => {
   if (invalidChars.includes(e.key)) {
     e.preventDefault();
+  }
+});
+
+phoneInput.addEventListener('keyup', (e) => {
+  if (e.target.value.length === 4) {
+    e.target.value += '-';
   }
 });
 
