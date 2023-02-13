@@ -1,4 +1,4 @@
-const SECRETE_CODE = 'jamashippuden';
+const SECRETE_CODE = 'shippuden';
 const button = document.getElementById('konami_btn');
 const konamiContainer = document.getElementById('konami');
 const formContainer = document.getElementById('formSummit');

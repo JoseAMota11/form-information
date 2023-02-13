@@ -24,13 +24,15 @@ export const createErrorAlert = ({ result, name, value }) => {
     console.log(`${name.toUpperCase()}: ${value}`);
   }
 
-  if (result) {
-    let ID = setInterval(cleanBottom, SECONDS);
-
-    function cleanBottom() {
-      btn.style.backgroundColor = COLOR_WHITE;
-      btn.textContent = 'send';
-      clearInterval(ID);
-    };
-  }
+  notifyTheUser(result)
 };
+
+function notifyTheUser(result) {
+  let ID = setInterval(cleanBottom, SECONDS);
+
+  function cleanBottom() {
+    btn.style.backgroundColor = COLOR_WHITE;
+    btn.textContent = 'send';
+    clearInterval(ID);
+  }
+}
