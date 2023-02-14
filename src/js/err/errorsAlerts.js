@@ -23,16 +23,18 @@ export const createErrorAlert = ({ result, name, value }) => {
     btn.textContent = 'sent';
     console.log(`${name.toUpperCase()}: ${value}`);
   }
-
-  notifyTheUser(result)
+  
+  notifyTheUser(result);
 };
 
 function notifyTheUser(result) {
-  let ID = setInterval(cleanBottom, SECONDS);
+  if (result) {
+    let ID = setInterval(cleanBottom, SECONDS);
 
-  function cleanBottom() {
-    btn.style.backgroundColor = COLOR_WHITE;
-    btn.textContent = 'send';
-    clearInterval(ID);
+    function cleanBottom() {
+      btn.style.backgroundColor = COLOR_WHITE;
+      btn.textContent = 'send';
+      clearInterval(ID);
+    }
   }
 }
